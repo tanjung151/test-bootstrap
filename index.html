@@ -72,8 +72,8 @@
         width="200"
         class="rounded-circle img-thumbnail"
       />
-      <h1 class="display-4">Tanjung 151</h1>
-      <p class="lead">Kantor Pelayanan Perbendaharaan Negara Tanjung</p>
+      <h1 class="display-4">PINANDU 151</h1>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -88,14 +88,14 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1200">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Tentang PINANDU 151</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-8" data-aos="fade-down" data-aos-duration="1300">
+          <div class="col-md-8">
             <p>
               Pusat Informasi dan Layanan Terpadu (PINANDU 151) merupakan salah
               satu inovasi layanan dari KPPN Tanjung yang mengumpulkan seluruh
@@ -121,14 +121,18 @@
     <!-- Projects -->
     <section id="features" style="background-color: #e2edff">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div
+          class="row text-center mb-3"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+        >
           <div class="col">
             <h2>Layanan</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="fade-down" data-aos-duration="1300">
+            <div class="card" data-aos="fade-down" data-aos-duration="1200">
               <img
                 src="projects/img-1.png"
                 class="card-img-top"
@@ -146,7 +150,7 @@
             <div
               class="card"
               data-aos="fade-down"
-              data-aos-duration="1300"
+              data-aos-duration="1200"
               data-aos-delay="100"
             >
               <img
@@ -166,7 +170,7 @@
             <div
               class="card"
               data-aos="fade-down"
-              data-aos-duration="1300"
+              data-aos-duration="1200"
               data-aos-delay="200"
             >
               <img
@@ -186,7 +190,7 @@
             <div
               class="card"
               data-aos="fade-down"
-              data-aos-duration="1300"
+              data-aos-duration="1200"
               data-aos-delay="300"
             >
               <img
@@ -206,7 +210,7 @@
             <div
               class="card"
               data-aos="fade-down"
-              data-aos-duration="1300"
+              data-aos-duration="1200"
               data-aos-delay="400"
             >
               <img
@@ -236,7 +240,7 @@
 
     <!-- Contact Us -->
     <section id="contact">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1200">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Kritik dan Saran</h2>
@@ -333,6 +337,28 @@
       </p>
     </footer>
     <!-- akhir footer -->
+
+    <!-- js gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {
+        duration: 2,
+        delay: 1.6,
+        text: 'Pusat Informasi dan Layanan Terpadu KPPN Tanjung',
+      });
+      gsap.from('.jumbotron', { duration: 1, y: -100, opacity: 0 });
+      gsap.from('.navbar', {
+        duration: 1.5,
+        y: '-100%',
+        opacity: 0,
+        ease: 'back.out(1.7, 1.7)',
+      });
+    </script>
+
+    <!-- js bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
