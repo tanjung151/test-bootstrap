@@ -1,6 +1,6 @@
-/* body {
-  min-height: 3000px;
-} */
+* {
+  font-family: Lustria;
+}
 
 .jumbotron {
   padding-top: 6rem;
@@ -18,7 +18,13 @@ footer {
 }
 footer a {
   text-decoration: none;
+  color: white;
 }
+
+footer a:hover {
+  color: red;
+}
+
 
 section {
   padding-top: 5rem;
