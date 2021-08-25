@@ -2,6 +2,7 @@
   font-family: Lustria;
 }
 
+
 .jumbotron {
   padding-top: 6rem;
   background-color: #e2edff;
@@ -24,7 +25,6 @@ footer a {
 footer a:hover {
   color: red;
 }
-
 
 section {
   padding-top: 5rem;
